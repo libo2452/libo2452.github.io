@@ -4,12 +4,13 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>Hello World | 寒潭清</title>
+    <title>在github page上用hexo搭建博客 | 寒潭清</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="[object Object]">
     
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in ">
+    <meta name="description" content="github建立项目需要在github上建立一个以github用户名开头的name.github.io(name为github用户名)的项目，然后开启github page,另外本机要部署好git的环境，以及设置git的私钥
+hexo安装部署node.js的安装就不多说了，安装后，执行一下命令初始化">
     
     
     
@@ -67,15 +68,15 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/03/30/hello-world/" title="Hello World" itemprop="url">Hello World</a>
+      <a href="/2015/03/31/在github-page上用hexo搭建博客/" title="在github page上用hexo搭建博客" itemprop="url">在github page上用hexo搭建博客</a>
   </h1>
   <p class="article-author">By
     
       <a href="http://libo2452.github.io" title="[object Object]">[object Object]</a>
     </p>
   <p class="article-time">
-    <time datetime="2015-03-30T03:28:24.000Z" itemprop="datePublished">2015-03-30</time>
-    更新日期:<time datetime="2015-03-30T03:28:24.000Z" itemprop="dateModified">2015-03-30</time>
+    <time datetime="2015-03-31T12:00:11.000Z" itemprop="datePublished">2015-03-31</time>
+    更新日期:<time datetime="2015-03-31T12:09:05.000Z" itemprop="dateModified">2015-03-31</time>
     
   </p>
 </header>
@@ -84,18 +85,14 @@
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
-		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick_Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create_a_new_post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run_server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate_static_files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy_to_remote_sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#github建立项目"><span class="toc-number">1.</span> <span class="toc-text">github建立项目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo安装部署"><span class="toc-number">2.</span> <span class="toc-text">hexo安装部署</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#出现的主要问题"><span class="toc-number">3.</span> <span class="toc-text">出现的主要问题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#hexo部署项目失败"><span class="toc-number">3.1.</span> <span class="toc-text">hexo部署项目失败</span></a></li></ol></li></ol>
 		</div>
 		
-		<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+		<h2 id="github建立项目">github建立项目</h2><p>需要在github上建立一个以github用户名开头的name.github.io(name为github用户名)的项目，然后开启github page,另外本机要部署好git的环境，以及设置git的私钥</p>
+<h2 id="hexo安装部署">hexo安装部署</h2><p>node.js的安装就不多说了，安装后，执行一下命令初始化项目<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+<h2 id="出现的主要问题">出现的主要问题</h2><h3 id="hexo部署项目失败">hexo部署项目失败</h3><p> 在更新后，也修改了_config.yml配置，但执行hexo d -g 失败，提示“ERROR Deployer not found: github”,需要执行以下操作<br> <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="operator"><span class="keyword">install</span> hexo-deployer-git <span class="comment">--save</span></span></span><br></pre></td></tr></table></figure></p>
+<p> 同时修改_config.yml里的<br> <figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">deploy</span>:</span><br><span class="line"> <span class="attribute">type</span>: git      <span class="comment">//原来配置的是github</span></span><br></pre></td></tr></table></figure></p>
+<p>然后执行hexo d -g，则成功了</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -105,7 +102,7 @@
 
 <div class="article-share" id="share">
 
-  <div data-url="http://libo2452.github.io/2015/03/30/hello-world/" data-title="Hello World | 寒潭清" data-tsina="null" class="share clearfix">
+  <div data-url="http://libo2452.github.io/2015/03/31/在github-page上用hexo搭建博客/" data-title="在github page上用hexo搭建博客 | 寒潭清" data-tsina="null" class="share clearfix">
   </div>
 
 </div>
@@ -114,14 +111,14 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2015/03/31/my-new-post/" title="my new post">
-  <strong>PREVIOUS:</strong><br/>
-  <span>
-  my new post</span>
+
+<div class="next">
+<a href="/2015/03/31/my-new-post/"  title="my new post">
+ <strong>NEXT:</strong><br/> 
+ <span>my new post
+</span>
 </a>
 </div>
-
 
 </nav>
 
@@ -135,7 +132,7 @@
 
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
-  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick_Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create_a_new_post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run_server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate_static_files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy_to_remote_sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#github建立项目"><span class="toc-number">1.</span> <span class="toc-text">github建立项目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo安装部署"><span class="toc-number">2.</span> <span class="toc-text">hexo安装部署</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#出现的主要问题"><span class="toc-number">3.</span> <span class="toc-text">出现的主要问题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#hexo部署项目失败"><span class="toc-number">3.1.</span> <span class="toc-text">hexo部署项目失败</span></a></li></ol></li></ol>
   </div>
 
 <div id="asidepart">
