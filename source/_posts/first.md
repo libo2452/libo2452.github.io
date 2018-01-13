@@ -9,9 +9,7 @@ tags:
 ## hexo安装部署
 node.js的安装就不多说了，安装后，执行一下命令初始化项目
 ``` js
-function test(){
-    console.log(123);
-}
+hexo init
 ```
 ### 相关插件
 npm install hexo-generator-sitemap
